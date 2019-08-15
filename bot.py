@@ -8,9 +8,9 @@ from itertools import cycle
 
 #client config
 
-status = ["Prefix = d>'", 'ArdanKR_#9290', 'd>help', "접두사 = 'd>'", 'ArdanKR_#9290', 'd>도움말', 'Mention Me', '저를 호출해보세요']
+status = ["Prefix = d>'", 'ArdanKR_#9290', 'd>help', "접두사 = 'd>'", 'ArdanKR_#9290', 'Mention Me', '저를 호출해보세요']
 
-client = commands.Bot(command_prefix = 'p>')
+client = commands.Bot(command_prefix = 'd>')
 client.remove_command('help')
 
 async def change_status():
