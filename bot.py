@@ -88,8 +88,8 @@ async def on_message(message):
         embed.add_field(name='DST Bot#7380 BOT Profile', value='󠀀󠀀 󠀀󠀀')
         embed.add_field(name='**Nickname & Tag**', value='DST Bot#7380', inline=True)
         embed.add_field(name='**Bot ID**', value='604886711578787841', inline=True)
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/606346201784123396/606792801635663881/1564741015418.png')
-        embed.set_footer(text='DST Bot By ArdanKR_#9290', icon_url='https://cdn.discordapp.com/attachments/603214980707516416/606795951037743123/1564741015418.png')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/606346201784123396/611551815636615178/JPEG_20190815_121744.jpg')
+        embed.set_footer(text='DST Bot By ArdanKR_#9290', icon_url='https://cdn.discordapp.com/attachments/606346201784123396/611551815636615178/JPEG_20190815_121744.jpg')
 
         await client.send_message(message.channel, embed=embed)
 
