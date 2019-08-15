@@ -26,7 +26,7 @@ async def change_status():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('p>userinfo'):
+    if message.content.startswith('d>userinfo'):
         date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
         embed = discord.Embed(color=0x6184ff)
 
@@ -40,13 +40,13 @@ async def on_message(message):
 
         await client.send_message(message.channel, embed=embed)
 
-    if message.content.startswith('p>list'):
+    if message.content.startswith('d>list'):
         list = []
         for server in client.servers:
             list.append(server.name)
         await client.send_message(message.channel, "\n".join(list))
 
-    if message.content.startswith('p>avatar'):
+    if message.content.startswith('d>avatar'):
         date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
         embed = discord.Embed(color=0x6184ff)
 
@@ -56,7 +56,7 @@ async def on_message(message):
 
         await client.send_message(message.channel, embed=embed)
 
-    if message.content.startswith('p>developer'):
+    if message.content.startswith('d>developer'):
         date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
         embed = discord.Embed(color=0x6184ff)
 
@@ -67,29 +67,29 @@ async def on_message(message):
         embed.add_field(name='Other', value='`Copyright ⓒ 2019 ArdanKR_#9290 All right reserved`', inline=False)
         await client.send_message(message.channel, embed=embed)
 
-    if message.content.startswith('p>help'):
+    if message.content.startswith('d>help'):
         date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
         embed = discord.Embed(color=0x6184ff)
 
-        embed.set_author(name='XSplace Bot Command List')
-        embed.add_field(name='**General Command**', value='``p>help`` , ``p>avatar`` , ``p>list`` , ``p>userinfo`` , ``p>about``', inline=True)
-        embed.add_field(name='**Bot Information**', value='``p>delvoper``', inline=False)
+        embed.set_author(name='DST Bot Command List')
+        embed.add_field(name='**General Command**', value='``d>help`` , ``d>avatar`` , ``d>list`` , ``d>userinfo`` , ``d>about``', inline=True)
+        embed.add_field(name='**Bot Information**', value='``d>delvoper``', inline=False)
         embed.add_field(name='**Other**', value='`Copyright ⓒ 2019 ArdanKR_ All right reserved`', inline=False)
-        embed.set_footer(text='Thanks to use XSplace. If you have an error or problem, please contact ArdanKR_#9290')
+        embed.set_footer(text='Thanks to use DST Bot. If you have an error or problem, please contact ArdanKR_#9290')
         await client.send_message(message.channel, embed=embed)
 
-    if message.content.startswith('p>about'):
+    if message.content.startswith('d>about'):
         date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
         embed = discord.Embed(color=0x6184ff)
 
         embed.set_author(name='About Bot')
-        embed.add_field(name='Version', value='**0.1 __Premium__**', inline=True)
+        embed.add_field(name='Version', value='**0.1 **', inline=True)
         embed.add_field(name='󠀀󠀀 󠀀󠀀', value='󠀀󠀀 󠀀󠀀')
-        embed.add_field(name='XSplace#7270 BOT Profile', value='󠀀󠀀 󠀀󠀀')
-        embed.add_field(name='**Nickname & Tag**', value='XSplace Premium#7380', inline=True)
+        embed.add_field(name='DST Bot#7380 BOT Profile', value='󠀀󠀀 󠀀󠀀')
+        embed.add_field(name='**Nickname & Tag**', value='DST Bot#7380', inline=True)
         embed.add_field(name='**Bot ID**', value='604886711578787841', inline=True)
         embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/606346201784123396/606792801635663881/1564741015418.png')
-        embed.set_footer(text='XSplace Premium By ArdanKR_#9290', icon_url='https://cdn.discordapp.com/attachments/603214980707516416/606795951037743123/1564741015418.png')
+        embed.set_footer(text='DST Bot By ArdanKR_#9290', icon_url='https://cdn.discordapp.com/attachments/603214980707516416/606795951037743123/1564741015418.png')
 
         await client.send_message(message.channel, embed=embed)
 
@@ -97,8 +97,7 @@ async def on_message(message):
         date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >> 22) + 1420070400000) / 1000)
         embed = discord.Embed(color=0x6184ff)
 
-        await client.send_message(message.channel, "제 명령어 목록을 보시려면 'p>도움말'을 사용해주세요")
-        await client.send_message(message.channel, "'p>help' to see bot command list")
+        await client.send_message(message.channel, "'d>help' to see bot command list")
 
 
 
